@@ -219,4 +219,45 @@ nav #menuToggle input:checked ~ ul {
 .container .textholder p {
   font-family: Trirong;
 }
+
+.content {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100vw;
+}
+
+.content .headline img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 60vw;
+  margin: auto;
+}
+
+.content .headline h2 {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  font-size: 2.8rem;
+  text-decoration: underline;
+}
+
+.content p {
+  width: 70vw;
+}
 /*# sourceMappingURL=main.css.map */

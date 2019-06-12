@@ -16,12 +16,12 @@ body {
 // nav {
 //     display: flex;
     // position: fixed;
-    // top: 0; 
+    // top: 0;
     // z-index: 9;
 
 //     a {
 //         text-decoration: none;
-//         color: white; 
+//         color: white;
 //         font-size: 2em;
 //     }
 //     img {
@@ -34,10 +34,10 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top: 1.5rem; 
+    top: 1.5rem;
     z-index: 9;
 
-    a { 
+    a {
         text-decoration: none;
         color: #845E67;
         transition: color 0.3s ease;
@@ -70,7 +70,7 @@ nav {
     }
 
     #menuToggle span {
-    
+
         display: block;
         width: 33px;
         height: 4px;
@@ -118,7 +118,7 @@ nav {
         background: #ffffff;
         opacity: 0.7;
         list-style-type: none;
-        -webkit-font-smoothing: antialiased;  
+        -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
         transform: translate(-100%, 0);
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -150,13 +150,13 @@ nav {
     top: 30vh;
     left: 0;
     width: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 
     .main {
         width: 100%;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: center;
 
@@ -166,7 +166,7 @@ nav {
             font-size: 4rem;
             margin: .3rem;
         }
-    
+
         h4 {
             color: white;
             font-size: 1.5rem;
@@ -205,3 +205,31 @@ nav {
 }
 }
 
+.content {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .headline {
+    display: flex;
+    position: relative;
+    width: 100vw;
+
+    img {
+      transform: rotate(90deg);
+      width: 60vw;
+      margin: auto;
+    }
+    h2 {
+      position: absolute;
+      top: 150px;
+      left: 30px;
+      font-size: 2.8rem;
+      text-decoration: underline;
+    }
+  }
+  p {
+    width: 70vw;
+  }
+}
