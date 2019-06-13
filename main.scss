@@ -111,8 +111,8 @@ nav {
 
     #menu {
         position: absolute;
-        width: 350px;
-        margin: -100px 0 0 -380px;
+        width: 600px;
+        margin: -100px 0 0 -600px;
         padding: 50px;
         padding-top: 100px;
         background: #ffffff;
@@ -183,9 +183,11 @@ nav {
 }
 
 .container {
+
     img {
         height: 10rem;
         width: 100%;
+        margin-top: 5rem;
     }
 
     .textholder{
@@ -203,6 +205,51 @@ nav {
         }
     
 }
+}
+
+@media (min-width:768px) {
+
+    #menuToggle span{
+        display: none;
+        visibility: hidden;
+        margin-left: -999px;
+    }
+
+    #menu li{
+        display: inline;
+        border: 1px solid #845E67;
+        margin: .3rem;
+        float: right;
+    }
+
+    .container {
+        margin-top: 3rem;
+
+        img {
+            width: 40%;
+            height: 400px;
+            float: left;
+            clear: both;
+            padding: 1rem;
+        }
+
+        #caringpic2{
+            float: right;
+        }
+
+    .textholder{
+        width: 40%;
+        float: right;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    #textholder2{
+        float: left;
+    }
+        
+    }   
+
 }
 
 .content {
@@ -233,3 +280,5 @@ nav {
     width: 70vw;
   }
 }
+
+

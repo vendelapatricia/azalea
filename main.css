@@ -109,8 +109,8 @@ nav #menuToggle input:checked ~ span:nth-last-child(2) {
 
 nav #menu {
   position: absolute;
-  width: 350px;
-  margin: -100px 0 0 -380px;
+  width: 600px;
+  margin: -100px 0 0 -600px;
   padding: 50px;
   padding-top: 100px;
   background: #ffffff;
@@ -203,6 +203,7 @@ nav #menuToggle input:checked ~ ul {
 .container img {
   height: 10rem;
   width: 100%;
+  margin-top: 5rem;
 }
 
 .container .textholder {
@@ -218,6 +219,42 @@ nav #menuToggle input:checked ~ ul {
 
 .container .textholder p {
   font-family: Trirong;
+}
+
+@media (min-width: 768px) {
+  #menuToggle span {
+    display: none;
+    visibility: hidden;
+    margin-left: -999px;
+  }
+  #menu li {
+    display: inline;
+    border: 1px solid #845E67;
+    margin: .3rem;
+    float: right;
+  }
+  .container {
+    margin-top: 3rem;
+  }
+  .container img {
+    width: 40%;
+    height: 400px;
+    float: left;
+    clear: both;
+    padding: 1rem;
+  }
+  .container #caringpic2 {
+    float: right;
+  }
+  .container .textholder {
+    width: 40%;
+    float: right;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  .container #textholder2 {
+    float: left;
+  }
 }
 
 .content {
