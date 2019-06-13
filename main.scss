@@ -282,3 +282,47 @@ nav {
 }
 
 
+/*image-gallery*/
+.gallery {
+    display: flex;
+    font-family: "Trirong", serif;
+    margin: 6rem 0 0 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    .card {
+        background-color: #EEF3E8;
+        margin: 0 20px 0 0;
+        box-sizing: border-box;
+
+        .box {
+            font-size: 12px;
+            margin: 5px;
+            text-align: center;
+            
+            h1 {
+                font-size: 18px;
+                margin: 0;
+            }
+            
+            h3 {
+                font-style: italic;
+                font-weight: normal;
+                margin: 0;
+            }
+            
+            h4 {
+                font-weight: normal;
+                margin: 1rem 1rem 0 1rem;
+                text-align: left;
+            }
+        }
+        img {
+            height: 45vh;
+            width: 65vw;
+            scroll-snap-align: center;
+        }
+    }
+}
+
+

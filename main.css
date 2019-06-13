@@ -297,4 +297,52 @@ nav #menuToggle input:checked ~ ul {
 .content p {
   width: 70vw;
 }
+
+/*image-gallery*/
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Trirong", serif;
+  margin: 6rem 0 0 0;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.gallery .card {
+  background-color: #EEF3E8;
+  margin: 0 20px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gallery .card .box {
+  font-size: 12px;
+  margin: 5px;
+  text-align: center;
+}
+
+.gallery .card .box h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.gallery .card .box h3 {
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+}
+
+.gallery .card .box h4 {
+  font-weight: normal;
+  margin: 1rem 1rem 0 1rem;
+  text-align: left;
+}
+
+.gallery .card img {
+  height: 45vh;
+  width: 65vw;
+  scroll-snap-align: center;
+}
 /*# sourceMappingURL=main.css.map */
