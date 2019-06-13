@@ -293,7 +293,6 @@ nav {
     .card {
         background-color: #EEF3E8;
         margin: 0 20px 0 0;
-        box-sizing: border-box;
 
         .box {
             font-size: 12px;
@@ -325,4 +324,32 @@ nav {
     }
 }
 
+@media (min-width:768px) {
+    .gallery {
+        margin: 10rem 0 0 0;
+        display: flex;
+        font-family: "Trirong", serif;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
 
+        .card {
+            margin: 0 75px 0 0;
+
+            .box {
+                margin: 5px 0 30px 0;
+                
+                h1 {
+                    font-size: 25px;
+                }
+                
+                h4 {
+                    display: none;
+                }
+            }
+            img {
+                height: 65vh;
+                scroll-snap-align: none;
+            }
+        }
+    }
+}
