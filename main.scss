@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     background: white;
     margin: 0;
@@ -13,22 +16,6 @@ body {
     position: relative;
 }
 
-// nav {
-//     display: flex;
-    // position: fixed;
-    // top: 0;
-    // z-index: 9;
-
-//     a {
-//         text-decoration: none;
-//         color: white;
-//         font-size: 2em;
-//     }
-//     img {
-//         width: 50px;
-//     }
-// }
-
 nav {
     width: 100%;
     display: flex;
@@ -38,11 +25,10 @@ nav {
     z-index: 9;
 
     a {
-        text-decoration: none;
-        color: #845E67;
-        transition: color 0.3s ease;
+      text-decoration: none;
+      color: #845E67;
+      transition: color 0.3s ease;
     }
-
     img {
         width: 50px;
     }
@@ -203,7 +189,7 @@ nav {
     p{
         font-family: Trirong;
         }
-    
+
 }
 }
 
@@ -247,40 +233,93 @@ nav {
     #textholder2{
         float: left;
     }
-        
-    }   
+
+    }
 
 }
 
+
+/// home-page
 .content {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: all ease 1s;
 
   .headline {
+    background: url(img/monstera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     position: relative;
-    width: 100vw;
+    width: 80vw;
+    height: 50vw;
 
-    img {
-      transform: rotate(90deg);
-      width: 60vw;
-      margin: auto;
-    }
     h2 {
       position: absolute;
-      top: 150px;
-      left: 30px;
+      bottom: -8vw;
+      left: -3vw;
       font-size: 2.8rem;
       text-decoration: underline;
     }
   }
-  p {
+  .text {
     width: 70vw;
+    margin-top: 30px;
+
+    p {
+      font-size: 1.2rem;
+    }
   }
 }
 
+
+@media (min-width:768px) {
+  .content {
+    .headline {
+      margin: 5rem;
+    }
+
+    .text {
+      width: 80vw;
+      display: flex;
+      margin-top: -30px;
+    }
+  }
+}
+
+@media (min-width:992px) {
+  .content {
+    display: flex;
+    margin-top: 3rem;
+    position: relative;
+
+    .headline {
+      align-self: left;
+      width: 40vw;
+      height: 60vw;
+      margin-right: 35vw;
+
+      h2 {
+        width: 37vw;
+        bottom: 25vw;
+        left: 35vw;
+        font-size: 3.8rem;
+      }
+    }
+    .text {
+      flex-direction: column;
+      position: absolute;
+      left: 60vw;
+      bottom: 8vw;
+      width: 30vw;
+    }
+  }
+}
 
 /*image-gallery*/
 .gallery {
@@ -299,18 +338,18 @@ nav {
             font-size: 12px;
             margin: 5px;
             text-align: center;
-            
+
             h1 {
                 font-size: 18px;
                 margin: 0;
             }
-            
+
             h3 {
                 font-style: italic;
                 font-weight: normal;
                 margin: 0;
             }
-            
+
             h4 {
                 font-weight: normal;
                 margin: 1rem 1rem 0 1rem;
@@ -325,4 +364,21 @@ nav {
     }
 }
 
+/// footer
+footer {
+  display: none;
+  justify-content: space-between;
+  background: #E8E4DC;
+  width: 100%;
 
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: .8rem;
+  }
+}
+
+@media (min-width:768px) {
+  footer {
+    display: flex;
+  }
+}
