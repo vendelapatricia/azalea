@@ -206,7 +206,7 @@ nav a img {
 
 .head #arrow {
   width: 50px;
-  margin: 8rem 0 0 0;
+  margin: 7rem 0 0 0;
 }
 
 .container .pic1 {
@@ -322,6 +322,9 @@ nav a img {
 }
 
 @media (min-width: 992px) {
+  .head .main h1 {
+    font-size: 10rem;
+  }
   .container {
     margin: 6.5rem 10vw;
   }
@@ -335,45 +338,11 @@ nav a img {
   .container .textholder p {
     font-size: 1rem;
   }
-  .gallery {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .gallery .card {
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-    height: 70vh;
+    width: 25vw;
   }
   .gallery .card img {
     max-width: 25vw;
-  }
-  .gallery .card:hover {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-  .gallery .card:hover .back {
-    display: block;
-  }
-  .gallery .card:hover img {
-    display: none;
-  }
-  .gallery .card .box {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-  }
-  .gallery .card .box .back {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    width: 25vw;
-  }
-  .gallery .card .box .back p {
-    font-size: 1rem;
-    margin: 1.5rem;
   }
 }
 
@@ -480,10 +449,13 @@ nav a img {
   display: -ms-flexbox;
   display: flex;
   font-family: "Trirong", serif;
-  margin: 6rem 10px 3rem 10px;
+  margin: 8rem 10px 3rem 10px;
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .gallery .card {
@@ -539,9 +511,6 @@ nav a img {
   .gallery .card .box h1 {
     font-size: 25px;
   }
-  .gallery .card .box h4 {
-    display: none;
-  }
   .gallery .card img {
     scroll-snap-align: none;
   }
@@ -561,7 +530,7 @@ footer {
 footer p {
   font-family: "Roboto", sans-serif;
   font-size: .8rem;
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 0 2.5rem 0 2.5rem;
 }
 
 @media (min-width: 768px) {
