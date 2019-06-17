@@ -32,7 +32,7 @@ nav {
     img {
         width: 50px;
     }
-
+}
     #menuToggle {
         display: block;
         position: relative;
@@ -56,7 +56,6 @@ nav {
     }
 
     #menuToggle span {
-
         display: block;
         width: 33px;
         height: 4px;
@@ -79,12 +78,10 @@ nav {
         transform-origin: 0% 100%;
     }
 
-
     #menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
     }
-
 
     #menuToggle input:checked ~ span:nth-last-child(3) {
         opacity: 0;
@@ -119,7 +116,7 @@ nav {
     #menuToggle input:checked ~ ul {
         transform: none;
     }
-}
+
 
 
 .background {
@@ -192,8 +189,28 @@ nav {
 
 }
 }
-
+// nav
 @media (min-width:768px) {
+
+    #menu toggle {
+        width: 800px;
+    }
+
+    #menu{
+        margin: 0;
+        justify-content: flex-end;
+        margin-top: -115px;
+        display: inline;
+        background: none;
+    }
+
+    ul#menu li {
+    display: inline;
+    float:  right;
+    border: 3px solid #845E67;
+    margin: 1rem;
+    justify-content: flex-end;
+    }
 
     #menuToggle span{
         display: none;
@@ -201,12 +218,7 @@ nav {
         margin-left: -999px;
     }
 
-    #menu li{
-        display: inline;
-        border: 1px solid #845E67;
-        margin: .3rem;
-        float: right;
-    }
+
 
     .container {
         margin-top: 3rem;
@@ -302,7 +314,7 @@ nav {
       align-self: left;
       width: 40vw;
       height: 60vw;
-      margin-right: 35vw;
+      margin-right: 35vw;   
 
       h2 {
         width: 37vw;
