@@ -41,7 +41,7 @@ nav img {
   width: 50px;
 }
 
-nav #menuToggle {
+#menuToggle {
   display: block;
   position: relative;
   top: 10px;
@@ -53,7 +53,7 @@ nav #menuToggle {
        user-select: none;
 }
 
-nav #menuToggle input {
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -67,7 +67,7 @@ nav #menuToggle input {
   -webkit-touch-callout: none;
 }
 
-nav #menuToggle span {
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -84,37 +84,37 @@ nav #menuToggle span {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-nav #menuToggle span:first-child {
+#menuToggle span:first-child {
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
 }
 
-nav #menuToggle span:nth-last-child(2) {
+#menuToggle span:nth-last-child(2) {
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
 }
 
-nav #menuToggle input:checked ~ span {
+#menuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
           transform: rotate(45deg) translate(-2px, -1px);
 }
 
-nav #menuToggle input:checked ~ span:nth-last-child(3) {
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
           transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-nav #menuToggle input:checked ~ span:nth-last-child(2) {
+#menuToggle input:checked ~ span:nth-last-child(2) {
   -webkit-transform: rotate(-45deg) translate(0, -1px);
           transform: rotate(-45deg) translate(0, -1px);
 }
 
-nav #menu {
+#menu {
   position: absolute;
-  width: 600px;
-  margin: -100px 0 0 -600px;
+  width: 750px;
+  margin: -100px 0 0 -750px;
   padding: 50px;
   padding-top: 100px;
   background: #ffffff;
@@ -131,13 +131,13 @@ nav #menu {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-nav #menu li {
+#menu li {
   padding: 10px;
   font-size: 30px;
   text-align: right;
 }
 
-nav #menuToggle input:checked ~ ul {
+#menuToggle input:checked ~ ul {
   -webkit-transform: none;
           transform: none;
 }
@@ -241,16 +241,31 @@ nav #menuToggle input:checked ~ ul {
 }
 
 @media (min-width: 768px) {
+  #menu toggle {
+    width: 800px;
+  }
+  #menu {
+    margin: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: -115px;
+    display: inline;
+    background: none;
+  }
+  ul#menu li {
+    display: inline;
+    float: right;
+    border: 3px solid #845E67;
+    margin: 1rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   #menuToggle span {
     display: none;
     visibility: hidden;
     margin-left: -999px;
-  }
-  #menu li {
-    display: inline;
-    border: 1px solid #845E67;
-    margin: .3rem;
-    float: right;
   }
   .container {
     margin-top: 3rem;
@@ -417,7 +432,7 @@ nav #menuToggle input:checked ~ ul {
   display: -ms-flexbox;
   display: flex;
   font-family: "Trirong", serif;
-  margin: 6rem 0 0 0;
+  margin: 6rem 10px 3rem 10px;
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -452,8 +467,7 @@ nav #menuToggle input:checked ~ ul {
 }
 
 .gallery .card img {
-  height: 45vh;
-  width: 65vw;
+  width: 70vw;
   scroll-snap-align: center;
 }
 
@@ -481,7 +495,6 @@ nav #menuToggle input:checked ~ ul {
     display: none;
   }
   .gallery .card img {
-    height: 65vh;
     scroll-snap-align: none;
   }
 }
@@ -491,8 +504,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #E8E4DC;
+  background: #F7F7F7;
   width: 100%;
+  color: #A1A1A1;
 }
 
 footer p {

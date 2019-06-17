@@ -32,7 +32,7 @@ nav {
     img {
         width: 50px;
     }
-
+}
     #menuToggle {
         display: block;
         position: relative;
@@ -56,7 +56,6 @@ nav {
     }
 
     #menuToggle span {
-
         display: block;
         width: 33px;
         height: 4px;
@@ -79,12 +78,10 @@ nav {
         transform-origin: 0% 100%;
     }
 
-
     #menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
     }
-
 
     #menuToggle input:checked ~ span:nth-last-child(3) {
         opacity: 0;
@@ -97,8 +94,8 @@ nav {
 
     #menu {
         position: absolute;
-        width: 600px;
-        margin: -100px 0 0 -600px;
+        width: 750px;
+        margin: -100px 0 0 -750px;
         padding: 50px;
         padding-top: 100px;
         background: #ffffff;
@@ -119,7 +116,7 @@ nav {
     #menuToggle input:checked ~ ul {
         transform: none;
     }
-}
+
 
 
 .background {
@@ -207,8 +204,28 @@ nav {
 
 }
 }
-
+// nav
 @media (min-width:768px) {
+
+    #menu toggle {
+        width: 800px;
+    }
+
+    #menu{
+        margin: 0;
+        justify-content: flex-end;
+        margin-top: -115px;
+        display: inline;
+        background: none;
+    }
+
+    ul#menu li {
+    display: inline;
+    float:  right;
+    border: 3px solid #845E67;
+    margin: 1rem;
+    justify-content: flex-end;
+    }
 
     #menuToggle span{
         display: none;
@@ -216,12 +233,7 @@ nav {
         margin-left: -999px;
     }
 
-    #menu li{
-        display: inline;
-        border: 1px solid #845E67;
-        margin: .3rem;
-        float: right;
-    }
+
 
     .container {
         margin-top: 3rem;
@@ -354,7 +366,7 @@ nav {
       align-self: left;
       width: 40vw;
       height: 60vw;
-      margin-right: 35vw;
+      margin-right: 35vw;   
 
       h2 {
         width: 37vw;
@@ -377,7 +389,7 @@ nav {
 .gallery {
     display: flex;
     font-family: "Trirong", serif;
-    margin: 6rem 0 0 0;
+    margin: 6rem 10px 3rem 10px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
@@ -386,31 +398,28 @@ nav {
         margin: 0 20px 0 0;
 
         .box {
-            font-size: 12px;
-            margin: 5px;
-            text-align: center;
+          font-size: 12px;
+          margin: 5px;
+          text-align: center;
 
-            h1 {
-                font-size: 18px;
-                margin: 0;
-            }
-
-            h3 {
-                font-style: italic;
-                font-weight: normal;
-                margin: 0;
-            }
-
-            h4 {
-                font-weight: normal;
-                margin: 1rem 1rem 0 1rem;
-                text-align: left;
-            }
+          h1 {
+            font-size: 18px;
+            margin: 0;
+          }
+          h3 {
+            font-style: italic;
+            font-weight: normal;
+            margin: 0;
+          }
+          h4 {
+            font-weight: normal;
+            margin: 1rem 1rem 0 1rem;
+            text-align: left;
+          }
         }
         img {
-            height: 45vh;
-            width: 65vw;
-            scroll-snap-align: center;
+          width: 70vw;
+          scroll-snap-align: center;
         }
     }
 }
@@ -428,28 +437,29 @@ nav {
 
             .box {
                 margin: 5px 0 30px 0;
-                
+
                 h1 {
                     font-size: 25px;
                 }
-                
+
                 h4 {
                     display: none;
                 }
             }
             img {
-                height: 65vh;
                 scroll-snap-align: none;
             }
         }
     }
 }
+
 /// footer
 footer {
   display: none;
   justify-content: space-between;
-  background: #E8E4DC;
+  background: #F7F7F7;
   width: 100%;
+  color: #A1A1A1;
 
   p {
     font-family: "Roboto", sans-serif;
