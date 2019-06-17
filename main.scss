@@ -32,7 +32,7 @@ nav {
         &.logo {
             z-index: 100;
         }
-        
+
         img {
             width: 60px;
             margin: 0 0 0 2rem;
@@ -167,7 +167,7 @@ nav {
     }
     #arrow {
         width: 50px;
-        margin: 7rem 0 0 0;
+        margin: 3rem 0 0 0;
     }
 }
 
@@ -176,7 +176,7 @@ nav {
         background: url(img/caring-one.jpg);
         margin-top: 6rem;
     }
-    
+
     .pic2 {
         background: url(img/water.jpg);
     }
@@ -253,7 +253,7 @@ nav {
             align-items: flex-end;
             margin-bottom: 3rem;
             margin: 3rem;
-            
+
             .pic1{
                 order: 2;
             }
@@ -263,12 +263,12 @@ nav {
             background: url(img/caring-one.jpg);
             margin-top: 6rem;
         }
-        
+
         .pic2 {
             background: url(img/water.jpg);
-            
+
         }
-    
+
         .pic1, .pic2 {
             height: 45vw;
             width: 30vw;
@@ -297,7 +297,7 @@ nav {
         font-size: 10rem;
     }
     .container {
-        margin: 6.5rem 10vw; 
+        margin: 6.5rem 10vw;
 
         .pic1, .pic2 {
             margin: 1rem;
@@ -313,7 +313,7 @@ nav {
         }
     }
 
-    //gallery 
+    //gallery
     .gallery {
         .card {
             width: 25vw;
@@ -389,7 +389,7 @@ nav {
       align-self: left;
       width: 40vw;
       height: 60vw;
-      margin-right: 35vw;   
+      margin-right: 35vw;
 
       h2 {
         width: 37vw;
@@ -415,7 +415,7 @@ nav {
     margin: 8rem 10px 3rem 10px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    justify-content: center;
+  //  justify-content: center;
 
     .card {
         background-color: #EEF3E8;
@@ -465,10 +465,6 @@ nav {
                 h1 {
                     font-size: 25px;
                 }
-
-                // h4 {
-                //     display: none;
-                // }
             }
             img {
                 scroll-snap-align: none;
