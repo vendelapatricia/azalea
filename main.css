@@ -113,8 +113,8 @@ nav img {
 
 #menu {
   position: absolute;
-  width: 600px;
-  margin: -100px 0 0 -600px;
+  width: 750px;
+  margin: -100px 0 0 -750px;
   padding: 50px;
   padding-top: 100px;
   background: #ffffff;
@@ -379,7 +379,7 @@ nav img {
   display: -ms-flexbox;
   display: flex;
   font-family: "Trirong", serif;
-  margin: 6rem 0 0 0;
+  margin: 6rem 10px 3rem 10px;
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
@@ -414,8 +414,7 @@ nav img {
 }
 
 .gallery .card img {
-  height: 45vh;
-  width: 65vw;
+  width: 70vw;
   scroll-snap-align: center;
 }
 
@@ -443,7 +442,6 @@ nav img {
     display: none;
   }
   .gallery .card img {
-    height: 65vh;
     scroll-snap-align: none;
   }
 }
