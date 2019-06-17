@@ -169,16 +169,31 @@ nav {
 }
 
 .container {
+    .pic1 {
+        background: url(img/caring-one.jpg);
+        margin-top: 6rem;
+    }
+    
+    .pic2 {
+        background: url(img/water.jpg);
+    }
 
-    img {
+    .pic1, .pic2 {
         height: 10rem;
-        width: 100%;
-        margin-top: 5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
     }
 
     .textholder{
         width: 80%;
         margin: auto;
+
+        p {
+            font-size: .8rem;
+        }
+
 
     h2{
         font-family: Roboto;
@@ -211,31 +226,68 @@ nav {
     .container {
         margin-top: 3rem;
 
-        img {
-            width: 40%;
-            height: 400px;
+        .first-block, .second-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3rem;
+            margin: 3rem;
+            
+            .pic1{
+                order: 2;
+            }
+        }
+
+        .pic1 {
+            background: url(img/caring-one.jpg);
+            margin-top: 6rem;
+        }
+        
+        .pic2 {
+            background: url(img/water.jpg);
+            
+        }
+    
+        .pic1, .pic2 {
+            height: 45vw;
+            width: 30vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        }
+
+        .textholder{
+            width: 50vw;
+            padding: 0;
+            margin: 0 0 2rem 0;
+        }
+
+        #textholder2{
             float: left;
-            clear: both;
-            padding: 1rem;
         }
 
-        #caringpic2{
-            float: right;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        margin: 6.5rem 10vw; 
+
+        .pic1, .pic2 {
+            margin: 1rem;
         }
 
-    .textholder{
-        width: 40%;
-        float: right;
-        padding: 2rem;
-        margin-top: 3rem;
-    }
+        .textholder {
+            width: 30vw;
+            margin: 1rem;
 
-    #textholder2{
-        float: left;
+            p {
+                font-size: 1rem;
+            }
+        }
     }
-
-    }
-
 }
 
 
