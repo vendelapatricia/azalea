@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: white;
   margin: 0;
@@ -269,33 +273,89 @@ nav #menuToggle input:checked ~ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
 .content .headline {
+  background: url(img/monstera.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 100vw;
-}
-
-.content .headline img {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  width: 60vw;
-  margin: auto;
+  width: 80vw;
+  height: 50vw;
 }
 
 .content .headline h2 {
   position: absolute;
-  top: 150px;
-  left: 30px;
+  bottom: -8vw;
+  left: -3vw;
   font-size: 2.8rem;
   text-decoration: underline;
 }
 
-.content p {
+.content .text {
   width: 70vw;
+  margin-top: 30px;
+}
+
+.content .text p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .content .headline {
+    margin: 5rem;
+  }
+  .content .text {
+    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3rem;
+    position: relative;
+  }
+  .content .headline {
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
+    width: 40vw;
+    height: 60vw;
+    margin-right: 35vw;
+  }
+  .content .headline h2 {
+    width: 37vw;
+    bottom: 25vw;
+    left: 35vw;
+    font-size: 3.8rem;
+  }
+  .content .text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: 60vw;
+    bottom: 8vw;
+    width: 30vw;
+  }
 }
 
 /*image-gallery*/
@@ -370,6 +430,28 @@ nav #menuToggle input:checked ~ ul {
   .gallery .card img {
     height: 65vh;
     scroll-snap-align: none;
+  }
+}
+
+footer {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #E8E4DC;
+  width: 100%;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */
