@@ -22,15 +22,21 @@ nav {
     justify-content: space-between;
     position: fixed;
     top: 1.5rem;
-    z-index: 9;
+    z-index: 1;
 
     a {
       text-decoration: none;
       color: #845E67;
       transition: color 0.3s ease;
-    }
-    img {
-        width: 50px;
+
+        &.logo {
+            z-index: 100;
+        }
+        
+        img {
+            width: 60px;
+            margin: 0 0 0 2rem;
+        }
     }
 }
     #menuToggle {
@@ -206,6 +212,9 @@ nav {
 }
 // nav
 @media (min-width:768px) {
+    nav a img {
+        margin: 0 0 0 2rem;
+    }
 
     #menu toggle {
         width: 800px;
@@ -297,6 +306,48 @@ nav {
 
             p {
                 font-size: 1rem;
+            }
+        }
+    }
+
+    //gallery 
+    .gallery {
+        justify-content: center;
+
+        .card {
+            transform-style: preserve-3d;
+            transition: all 1.5s ease;
+            height: 70vh;
+
+            img {
+                max-width: 25vw;
+            }
+
+            &:hover {
+                transform: rotateY(180deg);
+
+                .back {
+                    display: block;
+                }
+                
+                img {
+                    display: none;
+                }
+            }
+    
+            .box {
+                backface-visibility: hidden;
+    
+                .back {
+                    backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                    width: 25vw;
+    
+                    p {
+                        font-size: 1rem;
+                        margin: 1.5rem;
+                    }
+                }
             }
         }
     }
@@ -433,7 +484,7 @@ nav {
         scroll-snap-type: x mandatory;
 
         .card {
-            margin: 0 75px 0 0;
+            margin: 0 2rem 0 2rem;
 
             .box {
                 margin: 5px 0 30px 0;
@@ -460,10 +511,12 @@ footer {
   background: #F7F7F7;
   width: 100%;
   color: #A1A1A1;
+  margin: 1.5rem 0 0 0;
 
   p {
     font-family: "Roboto", sans-serif;
     font-size: .8rem;
+    padding: 0 1.5rem 0 1.5rem;
   }
 }
 
