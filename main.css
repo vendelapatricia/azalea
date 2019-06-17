@@ -451,8 +451,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #E8E4DC;
+  background: #F7F7F7;
   width: 100%;
+  color: #A1A1A1;
 }
 
 footer p {
