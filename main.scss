@@ -8,15 +8,7 @@ body {
   padding: 0;
 }
 
-.background {
-  background: url("img/azalea-background.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-}
-
+/// navigation
 nav {
   width: 100%;
   display: flex;
@@ -33,7 +25,6 @@ nav {
     &.logo {
       z-index: 100;
     }
-
     img {
       width: 60px;
       margin: 0 0 0 2rem;
@@ -59,9 +50,7 @@ nav {
   top: -7px;
   left: -5px;
   opacity: 0;
-  /* hide this */
   z-index: 2;
-  /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
 
@@ -124,6 +113,7 @@ nav {
   transform: none;
 }
 
+/// home-page
 .background {
   background: url("img/azalea-background.jpg");
   height: 100vh;
@@ -149,19 +139,17 @@ nav {
     align-items: center;
 
     h1 {
-      color: white;
+      color: White;
       font-family: "Trirong", serif;
       font-size: 4rem;
       margin: 0.3rem;
     }
-
     h4 {
-      color: white;
+      color: White;
       font-size: 1.5rem;
     }
-
     hr {
-      color: white;
+      color: White;
       width: 16rem;
     }
   }
@@ -172,170 +160,6 @@ nav {
   }
 }
 
-.container {
-  .pic1 {
-    background: url("img/caring-one.jpg");
-    margin-top: 6rem;
-  }
-
-  .pic2 {
-    background: url("img/water.jpg");
-  }
-
-  .pic1,
-  .pic2 {
-    height: 10rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-  }
-
-  .textholder {
-    width: 80%;
-    margin: auto;
-
-    p {
-      font-size: 0.8rem;
-    }
-
-    h2 {
-      font-family: Roboto;
-      margin: 2rem 0 0.5rem;
-      font-weight: bold;
-    }
-
-    p {
-      font-family: Trirong;
-    }
-  }
-}
-// nav
-@media (min-width:768px) {
-  nav a img {
-    margin: 0 0 0 2rem;
-  }
-
-  #menu toggle {
-    width: 800px;
-  }
-
-  #menu {
-    margin: 0;
-    justify-content: flex-end;
-    margin-top: -115px;
-    display: inline;
-    background: none;
-  }
-
-  ul#menu li {
-    display: inline;
-    float: right;
-    border: 3px solid #845E67;
-    margin: 1rem;
-    justify-content: flex-end;
-  }
-
-  #menuToggle span {
-    display: none;
-    visibility: hidden;
-    margin-left: -999px;
-  }
-
-  .container {
-    margin-top: 3rem;
-
-    .first-block,
-    .second-block {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin: 3rem;
-
-      .pic1 {
-        order: 2;
-      }
-    }
-
-    .pic1 {
-      background: url("img/caring-one.jpg");
-      margin-top: 6rem;
-    }
-
-    .pic2 {
-      background: url("img/water.jpg");
-    }
-
-    .pic1, .pic2 {
-      height: 45vw;
-      width: 30vw;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      position: relative;
-    }
-
-    .textholder {
-      width: 50vw;
-      padding: 0;
-      margin: 0 0 2rem;
-    }
-
-    #textholder2 {
-      float: left;
-    }
-  }
-}
-
-/// desktop
-@media (min-width:992px) {
-
-  /// home-page
-  .head {
-    .main {
-      h1 {
-        font-size: 10rem;
-      }
-    }
-    .arrow {
-      width: 50px;
-      margin: 3rem 0 0 0;
-    }
-  }
-
-  /// caring-page
-  .container {
-    margin: 6.5rem 10vw;
-
-    .pic1, .pic2 {
-      margin: 1rem;
-    }
-
-    .textholder {
-      width: 30vw;
-      margin: 1rem;
-
-      p {
-        font-size: 1rem;
-      }
-    }
-  }
-
-  // plants-page
-  .gallery {
-    justify-content: center;
-
-    .card {
-      width: 25vw;
-
-      img {
-        max-width: 25vw;
-      }
-    }
-  }
-}
-
-/// home-page
 .content {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -374,57 +198,15 @@ nav {
   }
 }
 
-@media (min-width:768px) {
-  .content {
-    .headline {
-      margin: 5rem;
-    }
 
-    .text {
-      width: 80vw;
-      display: flex;
-      margin-top: -30px;
-    }
-  }
-}
-@media (min-width:992px) {
-  .content {
-    display: flex;
-    margin-top: 3rem;
-    position: relative;
-
-    .headline {
-      align-self: left;
-      width: 40vw;
-      height: 60vw;
-      margin-right: 35vw;
-
-      h2 {
-        width: 37vw;
-        bottom: 25vw;
-        left: 35vw;
-        font-size: 3.8rem;
-      }
-    }
-
-    .text {
-      flex-direction: column;
-      position: absolute;
-      left: 60vw;
-      bottom: 8vw;
-      width: 30vw;
-    }
-  }
-}
-/*image-gallery*/
-
+/// plants-page
 .gallery {
   display: flex;
   font-family: "Trirong", serif;
   margin: 8rem 10px 3rem;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  //  justify-content: center;
+
   .card {
     background-color: #EEF3E8;
     margin: 0 20px 0 0;
@@ -458,7 +240,105 @@ nav {
     }
   }
 }
+
+/// caring-page
+.container {
+  .pic1 {
+    background: url("img/caring-one.jpg");
+    margin-top: 6rem;
+  }
+
+  .pic2 {
+    background: url("img/water.jpg");
+  }
+
+  .pic1, .pic2 {
+    height: 10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+
+  .textholder {
+    width: 80%;
+    margin: auto;
+
+    p {
+      font-size: 0.8rem;
+      font-family: "Trirong", serif;
+    }
+    h2 {
+      font-family: "Roboto", sans-serif;
+      margin: 2rem 0 0.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+/// footer
+footer {
+  display: none;
+  justify-content: space-between;
+  background: #F7F7F7;
+  width: 100%;
+  color: #A1A1A1;
+  margin: 1.5rem 0 0;
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    padding: 0 2.5rem;
+  }
+}
+
+/// ipad
 @media (min-width:768px) {
+  /// navigation
+  nav a img {
+    margin: 0 0 0 2rem;
+  }
+
+  #menu toggle {
+    width: 800px;
+  }
+
+  #menu {
+    margin: 0;
+    justify-content: flex-end;
+    margin-top: -115px;
+    display: inline;
+    background: none;
+  }
+
+  ul#menu li {
+    display: inline;
+    float: right;
+    border: 3px solid #845E67;
+    margin: 1rem;
+    justify-content: flex-end;
+  }
+
+  #menuToggle span {
+    display: none;
+    visibility: hidden;
+    margin-left: -999px;
+  }
+
+  /// home-page
+  .content {
+    .headline {
+      margin: 5rem;
+    }
+
+    .text {
+      width: 80vw;
+      display: flex;
+      margin-top: -30px;
+    }
+  }
+
+  /// plants-page
   .gallery {
     margin: 10rem 0 0;
     display: flex;
@@ -482,25 +362,128 @@ nav {
       }
     }
   }
-}
-/// footer
 
-footer {
-  display: none;
-  justify-content: space-between;
-  background: #F7F7F7;
-  width: 100%;
-  color: #A1A1A1;
-  margin: 1.5rem 0 0;
+  /// caring-page
+  .container {
+    margin-top: 3rem;
 
-  p {
-    font-family: "Roboto", sans-serif;
-    font-size: 0.8rem;
-    padding: 0 2.5rem;
+    .first-block, .second-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 3rem;
+
+      .pic1 {
+        order: 2;
+      }
+    }
+
+    .pic1 {
+      background: url("img/caring-one.jpg");
+      margin-top: 6rem;
+    }
+    .pic2 {
+      background: url("img/water.jpg");
+    }
+
+    .pic1, .pic2 {
+      height: 45vw;
+      width: 30vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+    }
+
+    .textholder {
+      width: 50vw;
+      padding: 0;
+      margin: 0 0 2rem;
+    }
+
+    #textholder2 {
+      float: left;
+    }
   }
-}
-@media (min-width:768px) {
+
+  /// footer
   footer {
     display: flex;
+  }
+}
+
+/// desktop
+@media (min-width:992px) {
+
+  /// home-page
+  .head {
+    .main {
+      h1 {
+        font-size: 10rem;
+      }
+    }
+    .arrow {
+      width: 50px;
+      margin: 3rem 0 0 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    margin-top: 3rem;
+    position: relative;
+
+    .headline {
+      align-self: left;
+      width: 40vw;
+      height: 60vw;
+      margin-right: 35vw;
+
+      h2 {
+        width: 37vw;
+        bottom: 25vw;
+        left: 35vw;
+        font-size: 3.8rem;
+      }
+    }
+
+    .text {
+      flex-direction: column;
+      position: absolute;
+      left: 60vw;
+      bottom: 8vw;
+      width: 30vw;
+    }
+  }
+
+  // plants-page
+  .gallery {
+    justify-content: center;
+
+    .card {
+      width: 25vw;
+
+      img {
+        max-width: 25vw;
+      }
+    }
+  }
+
+  /// caring-page
+  .container {
+    margin: 6.5rem 10vw;
+
+    .pic1, .pic2 {
+      margin: 1rem;
+    }
+
+    .textholder {
+      width: 30vw;
+      margin: 1rem;
+
+      p {
+        font-size: 1rem;
+      }
+    }
   }
 }
